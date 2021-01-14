@@ -34,7 +34,7 @@ class Counter extends Component {
         });
         this.onCountTotalFeedback();
         this.countPositiveFeedbackPercentage();
-    }
+       }
 
 
     render () {
@@ -43,7 +43,7 @@ class Counter extends Component {
         return <>
        
         <SectionTitle title = 'Please leave your feedback'>
-            <FeedbackOptions options={this.onClick} />
+            <FeedbackOptions options={['good', 'neutral', 'bad']}  onLeaveFeedback={this.onClick}/>
         </SectionTitle>
         
         <SectionTitle title = 'Statistics'>
