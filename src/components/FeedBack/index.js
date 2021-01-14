@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import FeedbackOptions from '../FeedbackOptions/FeedbackOptions'
-import SectionTitle from '../SectionTitle/SectionTitle'
-import Statistic from '../Statistics/Statistics'
-import Notification from '../Statistics/Notification/Notification '
+import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
+import SectionTitle from '../SectionTitle/SectionTitle';
+import Statistic from '../Statistics/Statistics';
+import Notification from '../Statistics/Notification/Notification';
 
 
 class Counter extends Component {

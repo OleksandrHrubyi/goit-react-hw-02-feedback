@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styles from '../SectionTitle/sectionTitle.module.css'
+import styles from '../SectionTitle/sectionTitle.module.css';
 
 export default function SectionTitle ({title, children}) {
     return <div className ={styles.container}>
