@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(22, 22, 221, 0.678);
+  color: white;
+  min-width: 80px;
+  cursor: pointer;
+}
+
+.btn:last-child {
+  background-color: rgb(150, 0, 0);
+}

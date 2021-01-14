@@ -1,0 +1,16 @@
+.container {
+  padding: 20px 0px;
+}
+
+.title {
+  margin: 0px;
+  padding: 20px;
+  font-size: larger;
+  color: rgb(253, 253, 253);
+  text-align: center;
+}
+
+.child {
+  text-align: center;
+  color: blue;
+}

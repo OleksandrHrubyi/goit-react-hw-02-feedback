@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  color: white;
+}
+
+.review {
+  margin-bottom: 10px;
+}
+
+.bad {
+  color: rgb(150, 0, 0);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
