@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import Statistic from '../Statistics/Statistics';
-import Notification from '../Statistics/Notification/Notification';
+import Notification from '../Statistics/Notification/Notification ';
 
 
 class Counter extends Component {
@@ -11,9 +11,11 @@ class Counter extends Component {
     good: 0,
     neutral: 0,
     bad: 0,
-    total: 0,
-    percentage: 0,
+    
    }
+
+   total = 0;
+   percentage = 0;
    
    onCountTotalFeedback = () => {
        this.setState ((prevState) => {
