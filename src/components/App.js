@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
-import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
-import SectionTitle from '../SectionTitle/SectionTitle';
-import Statistic from '../Statistics/Statistics';
-import Notification from '../Statistics/Notification/Notification ';
+import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
+import SectionTitle from './SectionTitle/SectionTitle';
+import Statistic from './Statistics/Statistics';
+import Notification from './Statistics/Notification/Notification ';
+import Container from './Container/Container'
 
 
-class Counter extends Component {
+class App extends Component {
     
     state = {
     good: 0,
@@ -42,7 +43,7 @@ class Counter extends Component {
     render () {
         const { good, neutral, bad, total, percentage } = this.state;
         
-        return <>
+        return <Container>
        
         <SectionTitle title = 'Please leave your feedback'>
             <FeedbackOptions options={['good', 'neutral', 'bad']}  onLeaveFeedback={this.onClick}/>
@@ -52,11 +53,11 @@ class Counter extends Component {
             { total ? <Statistic good ={good} neutral = {neutral} bad ={bad} total = {total} percentage = {percentage}/> : <Notification message = "No feedback given."/> }
         </SectionTitle>
         
-        </>
+        </Container>
     }
 }
 
-export default Counter
+export default App
 
 
 
